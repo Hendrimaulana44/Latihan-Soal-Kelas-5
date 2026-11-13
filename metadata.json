@@ -1,0 +1,6 @@
+{
+  "name": "TKA GURU - Generator Naskah Ujian Berbasis AI SDN 1 Purwasari",
+  "description": "Platform Otomasi Penyusunan Naskah Asesmen Tes Kemampuan Akademik (TKA) SDN 1 Purwasari berbasis Gemini AI, lengkap dengan Editor Soal, Mode Cetak A4 Resmi, dan Ujian Interaktif CBT.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

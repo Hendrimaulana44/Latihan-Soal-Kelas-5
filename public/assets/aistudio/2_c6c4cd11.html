@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#00236f", "secondary-fixed": "#ffdbce", "surface-container-low": "#f4f3fa", "on-primary-fixed-variant": "#264191", "outline": "#757682", "on-tertiary": "#ffffff", "on-surface": "#1a1b21", "secondary": "#a73a00", "inverse-primary": "#b6c4ff", "background": "#faf8ff", "on-error-container": "#93000a", "surface-container-high": "#e9e7ef", "on-primary": "#ffffff", "error-container": "#ffdad6", "secondary-fixed-dim": "#ffb599", "surface": "#faf8ff", "success-emerald-soft": "#ECFDF5", "tertiary": "#4b1c00", "primary-container": "#1e3a8a", "tertiary-fixed": "#ffdbcb", "danger-rose": "#E11D48", "neutral-text-muted": "#64748B", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#341100", "on-background": "#1a1b21", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#773205", "on-secondary": "#ffffff", "on-secondary-fixed": "#370e00", "on-secondary-fixed-variant": "#7f2b00", "inverse-on-surface": "#f1f0f7", "success-emerald": "#059669", "warning-amber": "#D97706", "on-tertiary-container": "#f39461", "error": "#ba1a1a", "primary-fixed-dim": "#b6c4ff", "primary-fixed": "#dce1ff", "surface-container-highest": "#e3e1e9", "surface-container": "#eeedf4", "on-primary-container": "#90a8ff", "neutral-text-main": "#0F172A", "inverse-surface": "#2f3036", "surface-variant": "#e3e1e9", "tertiary-container": "#6e2c00", "neutral-card": "#FFFFFF", "surface-tint": "#4059aa", "neutral-surface": "#F8FAFC", "on-primary-fixed": "#00164e", "surface-dim": "#dad9e1", "outline-variant": "#c5c5d3", "brand-orange-hover": "#C2410C", "surface-bright": "#faf8ff", "neutral-border": "#E2E8F0", "brand-blue-soft": "#EFF6FF", "secondary-container": "#fd651e", "on-surface-variant": "#444651", "on-secondary-container": "#571a00", "brand-blue-interactive": "#2563EB", "brand-orange-light": "#FFF7ED", "tertiary-fixed-dim": "#ffb691" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xs": "0.25rem", "space-2xl": "3rem", "space-lg": "1.5rem", "space-md": "1rem", "gutter-mobile": "0.75rem", "space-xs": "0.5rem", "space-sm": "0.75rem", "margin-mobile": "1rem", "space-xl": "2rem", "gutter": "1.5rem", "margin": "2rem" }, "fontFamily": { "display-lg-mobile": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"] }, "fontSize": { "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.025em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 w-full"><div class="h-16 px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><img alt="Logo TKA Guru SDN 1 Purwasari" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDGMiFZe2eZRIHKTDAvpSg6VwgWvJ2jJ4pgUYHZpMXz3_8IvbahCeX29sRuU87vTxC9kgtHtheIReU6yMh3mjgrGrtmUrnGk8U-6j2wOF_O8JxVZILQ1Fp81XaYpoGCaOMOfVAOP9Wsd4NboztYDVtfQhnxnfgYPhBni1ppG_dEmIRTw6Tj6UlSVX1lz8weMULQqstZwezBVvyH3rvqoAgE4IRBSbPSBCBTiIJXuZiL"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-primary tracking-tight truncate">TKA GURU</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">SD</span></div><span class="font-label-sm text-label-sm text-neutral-text-muted truncate">SDN 1 Purwasari • TA 2024/2025</span></div></div><div class="flex items-center gap-space-md"><button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-secondary hover:bg-brand-orange-hover text-on-secondary shadow-sm transition-colors" type="button"><span class="material-symbols-outlined text-lg">add_circle</span><span class="font-label-lg text-label-lg font-semibold hidden sm:inline">Buat Naskah Baru</span></button><button aria-label="Notifikasi" class="p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzyVQJeO6ZkBBzV2ML-muatiR5uR0oov686uXgv6DKPFwCfC-vUr5Xxt_UD484szRrr7a4tXSAsqEqbM8O4OCHzR99jucAgYdYvth_uT0ssdQuZ07R2vA39MqQDIp33fx110cUbxr2BHjbubx-BD-sKAUTWJVwHsffMtJxDq8YYEK5yZrhCUJK6_0hxgMA2f3MGu20l4A30vFS0v5IWBSs9bJsQ7LvvgucFUcLN4c"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Ibu Ratna Dewi, S.Pd.</span><span class="font-label-sm text-label-sm text-neutral-text-muted truncate">Guru Kelas 4 &amp; Admin</span></div></div></div></div><div class="h-12 px-margin flex items-center overflow-x-auto"><nav class="flex items-center gap-space-xs py-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="px-space-md py-1.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap transition-colors" data-path="dashboard-naskah" href="#">Dashboard Naskah</a><a aria-current="page" class="px-space-md py-1.5 whitespace-nowrap transition-colors bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm" data-path="generator-ai-&amp;-editor" href="#">Generator AI &amp; Editor</a><a class="px-space-md py-1.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap transition-colors" data-path="preview-cetak-a4" href="#">Preview Cetak A4</a><a class="px-space-md py-1.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap transition-colors" data-path="mode-ujian-siswa" href="#">Mode Ujian Siswa</a><a class="px-space-md py-1.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap transition-colors" data-path="analisis-hasil" href="#">Analisis Hasil</a></nav></div></div></header><main class="w-full pt-28 bg-surface min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<!-- Top Utility Context Bar (Breadcrumb, AI Pipeline Telemetry & Title) -->
+<div class="w-full bg-surface-container-low py-space-md px-margin shadow-sm">
+<div class="max-w-[1360px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-neutral-text-muted font-label-sm text-label-sm">
+<span class="hover:text-primary transition-colors cursor-pointer flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">home</span>
+            Dashboard Naskah
+          </span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold">Studio Generator AI &amp; Editor Soal</span>
+</nav>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-sm text-headline-sm text-neutral-text-main font-bold tracking-tight">
+            Buat Naskah Ujian Berbasis Gemini Pro
+          </h1>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-brand-blue-soft text-brand-blue-interactive font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-brand-blue-interactive animate-pulse"></span>
+            Mode Asistif Aktif
+          </span>
+</div>
+</div>
+<!-- Execution Status Pill -->
+<div class="flex items-center gap-space-xs self-start md:self-auto bg-surface-container-lowest px-space-md py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-success-emerald text-base" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-neutral-text-main">
+<span class="font-medium">Google Apps Script:</span>
+<span class="text-success-emerald font-semibold">8.4s</span>
+<span class="text-outline-variant">•</span>
+<span class="text-neutral-text-muted">Quota: 142/200 RPS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Stepper Indicator -->
+<div class="w-full bg-surface-container-lowest py-space-md px-margin shadow-[0_1px_3px_rgba(15,23,42,0.04)]">
+<div class="max-w-[1360px] mx-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm md:gap-space-md">
+<!-- Step 1 (Completed) -->
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-low transition-all">
+<div class="w-8 h-8 rounded-full bg-success-emerald text-on-primary flex items-center justify-center font-label-md text-label-md font-bold flex-shrink-0">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-success-emerald font-bold uppercase tracking-wider">Langkah 1</span>
+<span class="font-label-md text-label-md text-neutral-text-main font-semibold truncate">Input Kisi-kisi CP</span>
+</div>
+</div>
+<!-- Step 2 (Completed) -->
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-low transition-all">
+<div class="w-8 h-8 rounded-full bg-success-emerald text-on-primary flex items-center justify-center font-label-md text-label-md font-bold flex-shrink-0">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-success-emerald font-bold uppercase tracking-wider">Langkah 2</span>
+<span class="font-label-md text-label-md text-neutral-text-main font-semibold truncate">Analisis Stimulus AI</span>
+</div>
+</div>
+<!-- Step 3 (Completed) -->
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-low transition-all">
+<div class="w-8 h-8 rounded-full bg-success-emerald text-on-primary flex items-center justify-center font-label-md text-label-md font-bold flex-shrink-0">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-success-emerald font-bold uppercase tracking-wider">Langkah 3</span>
+<span class="font-label-md text-label-md text-neutral-text-main font-semibold truncate">Penyusunan Butir Soal</span>
+</div>
+</div>
+<!-- Step 4 (Current / Active) -->
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-brand-orange-light transition-all shadow-sm">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-md text-label-md font-bold flex-shrink-0 ring-4 ring-secondary-fixed">
+            4
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Langkah 4 • Aktif</span>
+<span class="font-label-md text-label-md text-neutral-text-main font-bold truncate">Validasi Kunci &amp; Solusi</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Split Studio Workspace -->
+<div class="w-full px-margin py-space-lg max-w-[1360px] mx-auto pb-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PANEL: Konfigurasi Kisi-kisi & Generator Control (lg:col-span-5) -->
+<aside class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Configuration Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">tune</span>
+<h2 class="font-title-lg text-title-lg text-neutral-text-main">Parameter Naskah</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-neutral-text-muted">Kurikulum Merdeka</span>
+</div>
+<!-- Mata Pelajaran Toggle -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-neutral-text-main font-semibold">Mata Pelajaran</label>
+<div class="grid grid-cols-2 gap-2 p-1 bg-surface-container-low rounded-xl">
+<label class="flex items-center justify-center gap-2 py-2 px-3 rounded-lg cursor-pointer transition-all bg-primary-container text-on-primary shadow-sm font-label-md text-label-md font-semibold">
+<input checked="" class="hidden" name="mapel" type="radio" value="matematika"/>
+<span class="material-symbols-outlined text-base">calculate</span>
+<span>Matematika</span>
+</label>
+<label class="flex items-center justify-center gap-2 py-2 px-3 rounded-lg cursor-pointer transition-all text-neutral-text-muted hover:text-neutral-text-main font-label-md text-label-md font-medium">
+<input class="hidden" name="mapel" type="radio" value="bahasa"/>
+<span class="material-symbols-outlined text-base">menu_book</span>
+<span>Bahasa Indonesia</span>
+</label>
+</div>
+</div>
+<!-- Kelas & Fase -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-neutral-text-main font-semibold">Tingkat Kelas</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-lowest px-3.5 py-2.5 rounded-xl font-body-sm text-body-sm text-neutral-text-main shadow-sm focus:outline-none focus:bg-brand-blue-soft">
+<option selected="">Kelas 4 SD (Fase B)</option>
+<option>Kelas 1 SD (Fase A)</option>
+<option>Kelas 2 SD (Fase A)</option>
+<option>Kelas 3 SD (Fase B)</option>
+<option>Kelas 5 SD (Fase C)</option>
+<option>Kelas 6 SD (Fase C)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-neutral-text-muted pointer-events-none text-base">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-neutral-text-main font-semibold">Jenis Asesmen</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-lowest px-3.5 py-2.5 rounded-xl font-body-sm text-body-sm text-neutral-text-main shadow-sm focus:outline-none">
+<option selected="">Sumatif Akhir Semester (SAS)</option>
+<option>Sumatif Tengah Semester (STS)</option>
+<option>Formatif Harian</option>
+<option>Simulasi AKM SD</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-neutral-text-muted pointer-events-none text-base">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Jumlah Soal & Distribusi Stimulus -->
+<div class="flex flex-col gap-2 bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-neutral-text-main font-semibold">Distribusi Komposisi Butir</label>
+<span class="font-label-md text-label-md font-bold text-primary">30 Soal</span>
+</div>
+<input class="w-full accent-primary h-2 bg-surface-container-highest rounded-lg cursor-pointer" max="40" min="10" step="5" type="range" value="30"/>
+<div class="flex items-center justify-between text-neutral-text-muted font-label-sm text-label-sm pt-1">
+<span>10 Stimulus</span>
+<span class="font-medium text-neutral-text-main bg-surface-container-lowest px-2 py-0.5 rounded-md">@ 3 Soal Bertingkat (LOTS, MOTS, HOTS)</span>
+<span>Rasio 40% : 40% : 20%</span>
+</div>
+</div>
+<!-- Textarea Kisi-kisi CP -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-neutral-text-main font-semibold">Capaian Pembelajaran (CP) &amp; Kisi-kisi</label>
+<button class="text-brand-blue-interactive font-label-sm text-label-sm hover:underline flex items-center gap-0.5" type="button">
+<span class="material-symbols-outlined text-xs">auto_awesome</span>
+                Template Kurikulum
+              </button>
+</div>
+<textarea class="w-full p-space-sm rounded-xl font-body-sm text-body-sm text-neutral-text-main bg-surface-container-lowest shadow-inner focus:outline-none focus:bg-brand-blue-soft transition-colors leading-relaxed" rows="5">Peserta didik dapat menyelesaikan masalah berkaitan dengan operasi perkalian dan pembagian bilangan cacah sampai 100, serta menyelesaikan masalah kontekstual pengukuran pecahan desimal dan uang di lingkungan pasar lokal pedesaan SDN 1 Purwasari.</textarea>
+<div class="flex items-center justify-between text-neutral-text-muted font-label-sm text-label-sm">
+<span>Fokus konteks: Kearifan Lokal &amp; Numerasi Praktis</span>
+<span>188 Karakter</span>
+</div>
+</div>
+<!-- Tingkat Kesulitan & Konteks Tambahan -->
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 rounded-xl bg-success-emerald-soft text-success-emerald flex flex-col items-center">
+<span class="font-label-sm text-label-sm">Mudah (LOTS)</span>
+<span class="font-title-md text-title-md font-bold">10 Soal</span>
+</div>
+<div class="p-2 rounded-xl bg-brand-orange-light text-secondary flex flex-col items-center">
+<span class="font-label-sm text-label-sm">Sedang (MOTS)</span>
+<span class="font-title-md text-title-md font-bold">14 Soal</span>
+</div>
+<div class="p-2 rounded-xl bg-surface-container-high text-primary flex flex-col items-center">
+<span class="font-label-sm text-label-sm">Sukar (HOTS)</span>
+<span class="font-title-md text-title-md font-bold">6 Soal</span>
+</div>
+</div>
+<!-- Action Button: Regenerate with Gemini AI -->
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full py-3 px-space-md rounded-xl bg-secondary hover:bg-brand-orange-hover text-on-secondary font-label-lg text-label-lg font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-xl">sync_saved_locally</span>
+<span>Regenerate dengan Gemini Pro AI</span>
+</button>
+<p class="text-center font-label-sm text-label-sm text-neutral-text-muted">
+              Didukung oleh Google Workspace Add-on SDK SDN 1 Purwasari
+            </p>
+</div>
+</div>
+<!-- Mini Analytics / Prompt Quality Meter -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-brand-blue-soft text-brand-blue-interactive flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-neutral-text-main font-bold">Tingkat Keterkaitan CP: 96%</span>
+<span class="font-label-sm text-label-sm text-neutral-text-muted">Sesuai Pedoman BSKAP Kemendikbudristek</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-success-emerald-soft text-success-emerald font-label-sm text-label-sm font-semibold">Tervalidasi</span>
+</div>
+</aside>
+<!-- RIGHT PANEL: Interactive Question Editor & Stimulus (lg:col-span-7) -->
+<main class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Stimulus Card: Pasar Purwasari -->
+<section class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Stimulus Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold tracking-wide">
+                STIMULUS 1
+              </span>
+<h2 class="font-title-lg text-title-lg text-neutral-text-main font-bold">
+                Matematika Kontekstual: Pasar Tradisional Purwasari
+              </h2>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-auto">
+<button class="p-1.5 rounded-lg text-neutral-text-muted hover:text-neutral-text-main hover:bg-surface-container-low transition-colors" title="Edit Stimulus" type="button">
+<span class="material-symbols-outlined text-lg">edit_note</span>
+</button>
+<button class="p-1.5 rounded-lg text-neutral-text-muted hover:text-danger-rose hover:bg-error-container/20 transition-colors" title="Hapus Stimulus" type="button">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+<!-- Stimulus Media & Story Context -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center bg-surface-container-low p-space-md rounded-xl">
+<div class="md:col-span-4 rounded-lg overflow-hidden shadow-sm aspect-[4/3] bg-surface-container-high relative">
+<img class="w-full h-full object-cover" data-alt="Traditional Indonesian rural market in Purwasari village with fresh tropical fruits such as sweet oranges, red apples, and green bananas neatly arranged on bamboo baskets with hand-written price signs under soft morning market light, warm earth tones, editorial documentary style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3ILbE_LFe0MvhDYf_33QwplchXwZc3fJDQiU-KidyMGOTZJard3WH3vF1rbnA_gNMSHAYrrE5Qb_-ns6bT7VP-bG4IFVnnq8xMTDiEuJMzpg2SVJ0GzzxlKRdW2FcnDTL8AUBmAjcc-Joacfgrf9VuOFYo4-EdOLqHChKS8w495eD9ujcTpvt1esZzxbr6FtwKJFDW692z0R2ct_16kkcSSCQ3FrYJvXPi_UVSlw"/>
+<div class="absolute bottom-1 right-1 bg-surface/90 backdrop-blur-md px-1.5 py-0.5 rounded text-[10px] text-neutral-text-muted font-medium">
+                Pasar Pagi Purwasari
+              </div>
+</div>
+<div class="md:col-span-8 flex flex-col gap-2">
+<p class="font-body-sm text-body-sm text-neutral-text-main leading-relaxed">
+                Hari Minggu pagi, Ibu Ratna bersama anaknya, Farhan, berbelanja buah segar di <strong>Kios Berkah Pasar Purwasari</strong> untuk keperluan perayaan HUT Kemerdekaan di RT 03. Farhan mencatat daftar harga buah lokal yang terpajang di kios tersebut seperti tampak pada daftar berikut:
+              </p>
+<!-- Data Table inside Stimulus -->
+<div class="overflow-x-auto rounded-lg bg-surface-container-lowest shadow-sm mt-1">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-high text-neutral-text-main font-label-md text-label-md font-semibold">
+<tr>
+<th class="py-1.5 px-3">Nama Buah</th>
+<th class="py-1.5 px-3">Harga per Kg</th>
+<th class="py-1.5 px-3">Diskon Khusus</th>
+</tr>
+</thead>
+<tbody class="text-neutral-text-main">
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-1 px-3 font-medium">Jeruk Medan Manis</td>
+<td class="py-1 px-3">Rp 18.000</td>
+<td class="py-1 px-3 text-secondary font-medium">Beli ≥ 3 kg dapat Rp 2.000/kg</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-1 px-3 font-medium">Apel Malang Segar</td>
+<td class="py-1 px-3">Rp 24.000</td>
+<td class="py-1 px-3 text-neutral-text-muted">Tidak ada diskon</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-1 px-3 font-medium">Pisang Raja Sunpride</td>
+<td class="py-1 px-3">Rp 15.000</td>
+<td class="py-1 px-3 text-secondary font-medium">Beli 2 sisir Rp 28.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<!-- QUESTION 1: Pilihan Ganda Tunggal (LOTS/MOTS) -->
+<article class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md transition-all hover:shadow-md">
+<!-- Question Header Row -->
+<div class="flex items-center justify-between flex-wrap gap-2 pb-1">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">
+                1
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-brand-blue-soft text-brand-blue-interactive font-label-sm text-label-sm font-semibold">
+                Pilihan Ganda Biasa
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-neutral-text-muted font-label-sm text-label-sm">
+                Bobot: 1 Poin • LOTS
+              </span>
+</div>
+<!-- AI Confidence & Micro-tools -->
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-success-emerald-soft text-success-emerald font-label-sm text-label-sm font-semibold" title="Validasi AI Gemini Pro">
+<span class="material-symbols-outlined text-sm">verified</span>
+                AI Conf. 98%
+              </span>
+<button class="p-1 rounded-lg text-neutral-text-muted hover:text-neutral-text-main hover:bg-surface-container-low transition-colors" title="Regenerasi Butir Soal Ini Saja" type="button">
+<span class="material-symbols-outlined text-lg">autorenew</span>
+</button>
+<button class="p-1 rounded-lg text-neutral-text-muted hover:text-primary transition-colors" title="Edit Soal" type="button">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="p-1 rounded-lg text-neutral-text-muted hover:text-danger-rose transition-colors" title="Hapus Soal" type="button">
+<span class="material-symbols-outlined text-lg">delete_outline</span>
+</button>
+</div>
+</div>
+<!-- Question Prompt Text -->
+<p class="font-body-md text-body-md text-neutral-text-main font-medium leading-relaxed">
+            Ibu Ratna ingin membeli <strong>4 kg Jeruk Medan Manis</strong> untuk hidangan arisan guru. Berapakah jumlah uang total yang harus dibayarkan Ibu Ratna setelah mendapatkan potongan harga diskon pembelian?
+          </p>
+<!-- Radio Options Group (Answer Key marked at Option C) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-1">
+<!-- Option A -->
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest text-neutral-text-main flex items-center justify-center font-label-md text-label-md font-bold shadow-xs">
+                A
+              </div>
+<span class="font-body-sm text-body-sm text-neutral-text-main">Rp 72.000</span>
+</label>
+<!-- Option B -->
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest text-neutral-text-main flex items-center justify-center font-label-md text-label-md font-bold shadow-xs">
+                B
+              </div>
+<span class="font-body-sm text-body-sm text-neutral-text-main">Rp 68.000</span>
+</label>
+<!-- Option C (CORRECT ANSWER KEY) -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-brand-blue-soft text-brand-blue-interactive shadow-sm cursor-pointer transition-all">
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-brand-blue-interactive text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">
+                  C
+                </div>
+<span class="font-body-sm text-body-sm font-semibold text-neutral-text-main">Rp 64.000</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold bg-brand-blue-interactive text-on-primary px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check</span>
+                Kunci Jawaban
+              </span>
+</label>
+<!-- Option D -->
+<label class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest text-neutral-text-main flex items-center justify-center font-label-md text-label-md font-bold shadow-xs">
+                D
+              </div>
+<span class="font-body-sm text-body-sm text-neutral-text-main">Rp 60.000</span>
+</label>
+</div>
+<!-- Explanation Accordion -->
+<details class="group bg-surface-container-low rounded-xl p-space-md text-body-sm text-neutral-text-main mt-1">
+<summary class="font-label-md text-label-md font-semibold text-primary cursor-pointer flex items-center justify-between list-none">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-secondary">lightbulb</span>
+                Pembahasan Langkah Matematis &amp; Analisis Kunci (Opsi C)
+              </span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-neutral-text-muted">expand_more</span>
+</summary>
+<div class="pt-3 flex flex-col gap-2 font-body-sm text-neutral-text-main leading-relaxed">
+<p>1. Harga normal 4 kg Jeruk Medan = 4 × Rp 18.000 = <strong>Rp 72.000</strong>.</p>
+<p>2. Karena membeli 4 kg (≥ 3 kg), Ibu Ratna memperoleh diskon potongan harga sebesar Rp 2.000 untuk setiap kilogramnya: Diskon = 4 × Rp 2.000 = <strong>Rp 8.000</strong>.</p>
+<p>3. Total yang wajib dibayar = Rp 72.000 - Rp 8.000 = <strong>Rp 64.000</strong>.</p>
+<div class="p-2 rounded-lg bg-surface-container-lowest text-xs text-neutral-text-muted font-mono mt-1">
+                Kunci: C • Indikator: Menghitung selisih perkalian bilangan cacah kontekstual harga belanjaan.
+              </div>
+</div>
+</details>
+</article>
+<!-- QUESTION 2: Pilihan Ganda Kompleks (Pilih Lebih Dari Satu) -->
+<article class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md transition-all hover:shadow-md">
+<div class="flex items-center justify-between flex-wrap gap-2 pb-1">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">
+                2
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+                Pilihan Ganda Kompleks
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-neutral-text-muted font-label-sm text-label-sm">
+                Bobot: 2 Poin • MOTS
+              </span>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-success-emerald-soft text-success-emerald font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm">verified</span>
+                AI Conf. 95%
+              </span>
+<button class="p-1 rounded-lg text-neutral-text-muted hover:text-neutral-text-main hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">autorenew</span>
+</button>
+<button class="p-1 rounded-lg text-neutral-text-muted hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="p-1 rounded-lg text-neutral-text-muted hover:text-danger-rose transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">delete_outline</span>
+</button>
+</div>
+</div>
+<p class="font-body-md text-body-md text-neutral-text-main font-medium leading-relaxed">
+            Ibu Ratna membawa uang tunai <strong>Rp 100.000</strong>. Manakah dari pernyataan belanjaan berikut yang <strong>benar</strong> dan dapat dijangkau oleh uang Ibu Ratna? <em>(Pilihlah lebih dari satu jawaban yang sesuai!)</em>
+</p>
+<!-- Checkbox Options -->
+<div class="flex flex-col gap-2.5 pt-1">
+<!-- Option A (True/Selected) -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-brand-blue-soft text-neutral-text-main cursor-pointer shadow-xs transition-all">
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-md bg-brand-blue-interactive text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+<span class="font-body-sm text-body-sm font-medium">A. Membeli 3 kg Apel Malang dan mendapatkan uang kembalian Rp 28.000.</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-brand-blue-interactive bg-surface-container-lowest px-2 py-0.5 rounded-md">Kunci [✓]</span>
+</label>
+<!-- Option B (False) -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-neutral-text-main cursor-pointer transition-all">
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-md bg-surface-container-lowest text-neutral-text-muted flex items-center justify-center font-label-md text-label-md font-bold shadow-xs">
+                  B
+                </div>
+<span class="font-body-sm text-body-sm">B. Membeli 5 kg Apel Malang tanpa kekurangan uang belanja.</span>
+</div>
+<span class="font-label-sm text-label-sm text-neutral-text-muted">Salah (Rp 120.000)</span>
+</label>
+<!-- Option C (True/Selected) -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-brand-blue-soft text-neutral-text-main cursor-pointer shadow-xs transition-all">
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-md bg-brand-blue-interactive text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+<span class="font-body-sm text-body-sm font-medium">C. Membeli 2 kg Jeruk Medan (tanpa diskon) dan 2 sisir Pisang Raja dengan total harga tepat Rp 64.000.</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-brand-blue-interactive bg-surface-container-lowest px-2 py-0.5 rounded-md">Kunci [✓]</span>
+</label>
+<!-- Option D (False) -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-neutral-text-main cursor-pointer transition-all">
+<div class="w-6 h-6 rounded-md bg-surface-container-lowest text-neutral-text-muted flex items-center justify-center font-label-md text-label-md font-bold shadow-xs">
+                D
+              </div>
+<span class="font-body-sm text-body-sm">D. Uang Rp 100.000 cukup untuk membeli 6 kg Jeruk Medan setelah dipotong diskon.</span>
+</label></div>
+<span class="font-label-sm text-label-sm text-neutral-text-muted">Salah (Rp 16.000 x 6 = Rp 96.000, tapi opsi D menyebutkan Rp 102.000)</span>
+</article></main></div>
+<details class="group bg-surface-container-low rounded-xl p-space-md text-body-sm text-neutral-text-main mt-1">
+<summary class="font-label-md text-label-md font-semibold text-primary cursor-pointer flex items-center justify-between list-none">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-secondary">lightbulb</span>
+                Rincian Analisis Logika Pernyataan
+              </span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180 text-neutral-text-muted">expand_more</span>
+</summary>
+<div class="pt-3 flex flex-col gap-1.5 font-body-sm text-neutral-text-main">
+<p>• <strong>Pernyataan A Benar:</strong> 3 × Rp 24.000 = Rp 72.000. Kembalian: Rp 100.000 - Rp 72.000 = Rp 28.000.</p>
+<p>• <strong>Pernyataan C Benar:</strong> 2 kg Jeruk = Rp 36.000; Promo 2 sisir pisang = Rp 28.000. Total = Rp 36.000 + Rp 28.000 = Rp 64.000 (Masih di bawah Rp 100.000).</p>
+</div>
+</details>
+<!-- QUESTION 3: Benar / Salah (HOTS) -->
+<article class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md transition-all hover:shadow-md">
+<div class="flex items-center justify-between flex-wrap gap-2 pb-1">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">
+                3
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-brand-orange-light text-secondary font-label-sm text-label-sm font-semibold">
+                Matriks Benar / Salah
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-neutral-text-muted font-label-sm text-label-sm">
+                Bobot: 3 Poin • HOTS
+              </span>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-success-emerald-soft text-success-emerald font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm">verified</span>
+                AI Conf. 99%
+              </span>
+<button class="p-1 rounded-lg text-neutral-text-muted hover:text-neutral-text-main hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">autorenew</span>
+</button>
+<button class="p-1 rounded-lg text-neutral-text-muted hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">edit</span>
+</button>
+<button class="p-1 rounded-lg text-neutral-text-muted hover:text-danger-rose transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">delete_outline</span>
+</button>
+</div>
+</div>
+<p class="font-body-md text-body-md text-neutral-text-main font-medium leading-relaxed">
+            Perhatikan pernyataan evaluasi perhitungan harga pada Kios Berkah Purwasari berikut. Tentukan apakah setiap pernyataan bernilai <strong>Benar</strong> atau <strong>Salah</strong>!
+          </p>
+<!-- True / False Table Form -->
+<div class="overflow-x-auto rounded-xl bg-surface-container-low p-2">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="text-neutral-text-muted font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2 px-3">Pernyataan Konsep</th>
+<th class="py-2 px-3 text-center w-24">Benar</th>
+<th class="py-2 px-3 text-center w-24">Salah</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent">
+<!-- Row 1 -->
+<tr class="bg-surface-container-lowest">
+<td class="py-3 px-3 font-medium text-neutral-text-main rounded-l-xl">
+                    1. Membeli 3 kg Jeruk Medan lebih hemat Rp 6.000 dibanding membeli tanpa harga diskon promosi.
+                  </td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-success-emerald text-on-primary font-bold text-xs shadow-sm">
+                      ✓
+                    </span>
+</td>
+<td class="py-3 px-3 text-center rounded-r-xl">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-neutral-text-muted font-medium text-xs">
+                      —
+                    </span>
+</td>
+</tr>
+<tr class="h-2"></tr>
+<!-- Row 2 -->
+<tr class="bg-surface-container-lowest">
+<td class="py-3 px-3 font-medium text-neutral-text-main rounded-l-xl">
+                    2. Harga 1 kg Apel Malang setara dengan harga 2 kg Jeruk Medan saat dikenai potongan diskon.
+                  </td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-neutral-text-muted font-medium text-xs">
+                      —
+                    </span>
+</td>
+<td class="py-3 px-3 text-center rounded-r-xl">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-danger-rose text-on-primary font-bold text-xs shadow-sm">
+                      ✕
+                    </span>
+</td>
+</tr>
+<tr class="h-2"></tr>
+<!-- Row 3 -->
+<tr class="bg-surface-container-lowest">
+<td class="py-3 px-3 font-medium text-neutral-text-main rounded-l-xl">
+                    3. Jika Pak Kades memesan 5 sisir Pisang Raja Sunpride, total biaya belanja adalah Rp 71.000.
+                  </td>
+<td class="py-3 px-3 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-success-emerald text-on-primary font-bold text-xs shadow-sm">
+                      ✓
+                    </span>
+</td>
+<td class="py-3 px-3 text-center rounded-r-xl">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-neutral-text-muted font-medium text-xs">
+                      —
+                    </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div></div></main>
+<!-- FLOATING BOTTOM ACTION BAR -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-xl py-space-sm px-margin shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+<div class="max-w-[1360px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<!-- Left Quick Add buttons -->
+<div class="flex items-center gap-2 w-full sm:w-auto overflow-x-auto pb-1 sm:pb-0">
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-neutral-text-main font-label-md text-label-md font-semibold transition-all flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-base">add_circle_outline</span>
+<span>+ Tambah Soal Manual</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-neutral-text-main font-label-md text-label-md font-semibold transition-all flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-base">post_add</span>
+<span>+ Tambah Stimulus Baru</span>
+</button>
+</div>
+<!-- Right Action & Navigation Cluster -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<!-- Save to Google Sheets -->
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-primary font-label-md text-label-md font-bold shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-success-emerald text-lg">table_chart</span>
+<span>Simpan ke Google Sheets</span>
+</button>
+<!-- Proceed to Print / Export Preview -->
+<button class="inline-flex items-center gap-2 px-space-lg py-2.5 rounded-xl bg-secondary hover:bg-brand-orange-hover text-on-secondary font-label-lg text-label-lg font-bold shadow-md hover:shadow-lg transition-all" type="button">
+<span>Lanjut ke Preview Cetak A4</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<footer class="w-full bg-surface-container-low py-space-xl"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-neutral-text-muted"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md font-semibold text-primary">TKA GURU • SDN 1 Purwasari</span><span class="font-body-sm text-body-sm hidden sm:inline">Sistem Bank Soal &amp; Asesmen Standar Sekolah Dasar</span></div><div class="font-body-sm text-body-sm text-center md:text-right">© 2024–2025 SDN 1 Purwasari. Terintegrasi Kurikulum Merdeka.</div></div></footer></body></html>
