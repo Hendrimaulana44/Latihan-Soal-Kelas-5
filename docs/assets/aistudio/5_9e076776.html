@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#00236f", "secondary-fixed": "#ffdbce", "surface-container-low": "#f4f3fa", "on-primary-fixed-variant": "#264191", "outline": "#757682", "on-tertiary": "#ffffff", "on-surface": "#1a1b21", "secondary": "#a73a00", "inverse-primary": "#b6c4ff", "background": "#faf8ff", "on-error-container": "#93000a", "surface-container-high": "#e9e7ef", "on-primary": "#ffffff", "error-container": "#ffdad6", "secondary-fixed-dim": "#ffb599", "surface": "#faf8ff", "success-emerald-soft": "#ECFDF5", "tertiary": "#4b1c00", "primary-container": "#1e3a8a", "tertiary-fixed": "#ffdbcb", "danger-rose": "#E11D48", "neutral-text-muted": "#64748B", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#341100", "on-background": "#1a1b21", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#773205", "on-secondary": "#ffffff", "on-secondary-fixed": "#370e00", "on-secondary-fixed-variant": "#7f2b00", "inverse-on-surface": "#f1f0f7", "success-emerald": "#059669", "warning-amber": "#D97706", "on-tertiary-container": "#f39461", "error": "#ba1a1a", "primary-fixed-dim": "#b6c4ff", "primary-fixed": "#dce1ff", "surface-container-highest": "#e3e1e9", "surface-container": "#eeedf4", "on-primary-container": "#90a8ff", "neutral-text-main": "#0F172A", "inverse-surface": "#2f3036", "surface-variant": "#e3e1e9", "tertiary-container": "#6e2c00", "neutral-card": "#FFFFFF", "surface-tint": "#4059aa", "neutral-surface": "#F8FAFC", "on-primary-fixed": "#00164e", "surface-dim": "#dad9e1", "outline-variant": "#c5c5d3", "brand-orange-hover": "#C2410C", "surface-bright": "#faf8ff", "neutral-border": "#E2E8F0", "brand-blue-soft": "#EFF6FF", "secondary-container": "#fd651e", "on-surface-variant": "#444651", "on-secondary-container": "#571a00", "brand-blue-interactive": "#2563EB", "brand-orange-light": "#FFF7ED", "tertiary-fixed-dim": "#ffb691" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xs": "0.25rem", "space-2xl": "3rem", "space-lg": "1.5rem", "space-md": "1rem", "gutter-mobile": "0.75rem", "space-xs": "0.5rem", "space-sm": "0.75rem", "margin-mobile": "1rem", "space-xl": "2rem", "gutter": "1.5rem", "margin": "2rem" }, "fontFamily": { "display-lg-mobile": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"] }, "fontSize": { "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.025em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 w-full"><div class="h-16 px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><img alt="Logo TKA Guru SDN 1 Purwasari" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDGMiFZe2eZRIHKTDAvpSg6VwgWvJ2jJ4pgUYHZpMXz3_8IvbahCeX29sRuU87vTxC9kgtHtheIReU6yMh3mjgrGrtmUrnGk8U-6j2wOF_O8JxVZILQ1Fp81XaYpoGCaOMOfVAOP9Wsd4NboztYDVtfQhnxnfgYPhBni1ppG_dEmIRTw6Tj6UlSVX1lz8weMULQqstZwezBVvyH3rvqoAgE4IRBSbPSBCBTiIJXuZiL"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-primary tracking-tight truncate">TKA GURU</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">SD</span></div><span class="font-label-sm text-label-sm text-neutral-text-muted truncate">SDN 1 Purwasari • TA 2024/2025</span></div></div><div class="flex items-center gap-space-md"><button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-secondary hover:bg-brand-orange-hover text-on-secondary shadow-sm transition-colors" type="button"><span class="material-symbols-outlined text-lg">add_circle</span><span class="font-label-lg text-label-lg font-semibold hidden sm:inline">Buat Naskah Baru</span></button><button aria-label="Notifikasi" class="p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzyVQJeO6ZkBBzV2ML-muatiR5uR0oov686uXgv6DKPFwCfC-vUr5Xxt_UD484szRrr7a4tXSAsqEqbM8O4OCHzR99jucAgYdYvth_uT0ssdQuZ07R2vA39MqQDIp33fx110cUbxr2BHjbubx-BD-sKAUTWJVwHsffMtJxDq8YYEK5yZrhCUJK6_0hxgMA2f3MGu20l4A30vFS0v5IWBSs9bJsQ7LvvgucFUcLN4c"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Ibu Ratna Dewi, S.Pd.</span><span class="font-label-sm text-label-sm text-neutral-text-muted truncate">Guru Kelas 4 &amp; Admin</span></div></div></div></div><div class="h-12 px-margin flex items-center overflow-x-auto"><nav class="flex items-center gap-space-xs py-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="px-space-md py-1.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap transition-colors" data-path="dashboard-naskah" href="#">Dashboard Naskah</a><a class="px-space-md py-1.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap transition-colors" data-path="generator-ai-&amp;-editor" href="#">Generator AI &amp; Editor</a><a class="px-space-md py-1.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap transition-colors" data-path="preview-cetak-a4" href="#">Preview Cetak A4</a><a aria-current="page" class="px-space-md py-1.5 whitespace-nowrap transition-colors bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm" data-path="mode-ujian-siswa" href="#">Mode Ujian Siswa</a><a class="px-space-md py-1.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high whitespace-nowrap transition-colors" data-path="analisis-hasil" href="#">Analisis Hasil</a></nav></div></div></header><main class="w-full pt-28 bg-surface min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<!-- Top Utility Context Bar -->
+<div class="w-full bg-surface-container-low py-space-sm px-margin">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-neutral-text-muted">
+<span class="material-symbols-outlined text-base">verified_user</span>
+<span class="font-label-sm text-label-sm">Asesmen Terstandar Kemendikbudristek • SDN 1 Purwasari</span>
+</div>
+<div class="flex items-center gap-space-md">
+<!-- Dual-view Toggle pill -->
+<div class="inline-flex p-1 bg-surface-container-high rounded-full">
+<button class="px-space-md py-1 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary-container text-on-primary shadow-sm flex items-center gap-1" id="btnTabExam" onclick="switchView('exam')" type="button">
+<span class="material-symbols-outlined text-sm">edit_note</span>
+            Lembar Ujian Interaktif
+          </button>
+<button class="px-space-md py-1 rounded-full font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface flex items-center gap-1" id="btnTabResult" onclick="switchView('result')" type="button">
+<span class="material-symbols-outlined text-sm">insights</span>
+            Hasil &amp; Analisis Siswa
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- VIEW 1: EXAM RUNTIME VIEW -->
+<section class="w-full max-w-7xl mx-auto px-margin py-space-md flex flex-col gap-space-lg transition-opacity duration-300" id="examRuntimeSection">
+<!-- Student & Exam Information Header Card -->
+<div class="w-full bg-neutral-card rounded-2xl shadow-sm p-space-md sm:p-space-lg flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<!-- Identity & Subject -->
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-brand-blue-soft flex items-center justify-center text-brand-blue-interactive shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-3xl">school</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-neutral-text-main font-bold">Muhammad Farhan</h2>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">NISN: 0129845721</span>
+</div>
+<div class="flex items-center gap-space-xs text-neutral-text-muted mt-0.5">
+<span class="font-label-md text-label-md text-brand-blue-interactive font-semibold">Matematika • Kelas 4 SD</span>
+<span class="text-neutral-text-muted">•</span>
+<span class="font-body-sm text-body-sm">Asesmen Formatif Akhir Bab 3</span>
+</div>
+</div>
+</div>
+<!-- Quick Progress Pill & Countdown Timer -->
+<div class="flex flex-wrap items-center gap-space-md w-full lg:w-auto justify-between lg:justify-end">
+<div class="flex flex-col items-start lg:items-end">
+<span class="font-label-sm text-label-sm text-neutral-text-muted uppercase tracking-wider">Kemajuan Pengerjaan</span>
+<div class="flex items-center gap-space-xs mt-1">
+<div class="w-36 h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-success-emerald rounded-full transition-all duration-500" style="width: 40%;"></div>
+</div>
+<span class="font-label-md text-label-md text-neutral-text-main font-bold">12/30</span>
+</div>
+</div>
+<!-- Timer Badge with pulsing accent -->
+<div class="flex items-center gap-space-xs bg-brand-orange-light px-space-md py-space-xs rounded-xl shadow-sm">
+<div class="relative flex items-center justify-center">
+<span class="material-symbols-outlined text-warning-amber text-2xl animate-pulse">timer</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-warning-amber font-semibold uppercase leading-none">Sisa Waktu</span>
+<span class="font-title-lg text-title-lg text-secondary font-bold tracking-tight" id="countdownTimer">01:14:32</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 2-Column Main Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Question Stimulus & Interactive Options (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="bg-neutral-card rounded-2xl shadow-sm p-space-md sm:p-space-xl flex flex-col gap-space-lg">
+<!-- Question Stem Header -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-md py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg font-bold">
+                Soal No. 7 dari 30
+              </span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container-low text-neutral-text-muted font-label-sm text-label-sm font-semibold">
+                Pilihan Ganda • Bobot: 3 Poin
+              </span>
+</div>
+<div class="flex items-center gap-1 text-neutral-text-muted">
+<button class="p-1 rounded-lg hover:bg-surface-container-high transition-colors" title="Perbesar Teks" type="button">
+<span class="material-symbols-outlined text-xl">zoom_in</span>
+</button>
+<button class="p-1 rounded-lg hover:bg-surface-container-high transition-colors" title="Laporkan Kendala Soal" type="button">
+<span class="material-symbols-outlined text-xl">help</span>
+</button>
+</div>
+</div>
+<!-- Stimulus Area: Real-world Pasar Tradisional Context -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-primary font-title-md text-title-md font-bold">
+<span class="material-symbols-outlined text-xl">storefront</span>
+              Stimulus: Kegiatan Berbelanja di Pasar Minggu Purwasari
+            </div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              Pada hari Minggu pagi, Pak Budi bersama kedua anaknya berkunjung ke Toko Buah Segar Mandiri untuk membeli persediaan buah selama satu pekan. Toko buah tersebut memiliki daftar harga promo akhir pekan sebagai berikut:
+            </p>
+<!-- Stimulus Visual Content: Image + Contextual Price Table -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<div class="md:col-span-5 overflow-hidden rounded-xl bg-surface-container shadow-sm h-48 sm:h-52 relative">
+<img class="w-full h-full object-cover" data-alt="A bright and colorful elementary school textbook style illustration of an Indonesian traditional fresh fruit stall in Purwasari, with neatly arranged wooden crates holding bright oranges, crisp green and red apples, and Cavendish bananas. Gentle morning sunshine, clean joyful edtech aesthetic, warm amber and royal blue accents, high resolution photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSkceh--dzWYVvmU2fznn0-JzxWNgJujO_Zv1nwOsLlJWE1r7-NrZqzT375B1tOBWj5Ho27DOyWXhhoh41b45O-cPeNhkZpel9rew3cH4CT3gAxor0xnWlY6mEGOYrkKVjP7wG-m8SrV1uY3WeVDEp1yBVlkUTUAhghv5CUslTnUTp0-4xHqQWiTFcnjwUCQ9LigKofq4Eav7jXqW6kfmnnwjSCylifkq8AaCABNg"/>
+<div class="absolute bottom-2 left-2 px-2 py-1 rounded-md bg-on-surface/80 text-surface font-label-sm text-label-sm backdrop-blur-sm">
+                  Kios Buah Segar Mandiri
+                </div>
+</div>
+<div class="md:col-span-7 overflow-x-auto">
+<div class="bg-neutral-surface rounded-xl p-space-sm shadow-sm overflow-hidden">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-brand-blue-soft text-brand-blue-interactive font-label-md text-label-md">
+<th class="py-2.5 px-3 rounded-l-lg">Jenis Buah</th>
+<th class="py-2.5 px-3">Harga per Kg</th>
+<th class="py-2.5 px-3 rounded-r-lg text-right">Potongan Spesial</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent">
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-2.5 px-3 font-semibold text-neutral-text-main flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary inline-block"></span> Jeruk Manis
+                        </td>
+<td class="py-2.5 px-3 text-neutral-text-main font-semibold">Rp18.000</td>
+<td class="py-2.5 px-3 text-right text-success-emerald font-semibold">- Rp1.000 / kg</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-2.5 px-3 font-semibold text-neutral-text-main flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-danger-rose inline-block"></span> Apel Fuji
+                        </td>
+<td class="py-2.5 px-3 text-neutral-text-main font-semibold">Rp32.000</td>
+<td class="py-2.5 px-3 text-right text-neutral-text-muted">Harga Tetap</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-2.5 px-3 font-semibold text-neutral-text-main flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-warning-amber inline-block"></span> Pisang Ambon
+                        </td>
+<td class="py-2.5 px-3 text-neutral-text-main font-semibold">Rp15.000</td>
+<td class="py-2.5 px-3 text-right text-neutral-text-muted">Harga Tetap</td>
+</tr>
+</tbody>
+</table>
+<div class="mt-2 text-neutral-text-muted font-label-sm text-label-sm italic px-2">
+                    *Catatan: Harga jeruk manis setelah promo dihitung Rp17.000 per kilogram.
+                  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- The Main Question -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Pertanyaan Soal:</span>
+<p class="font-headline-sm text-headline-sm text-neutral-text-main leading-snug font-bold">
+              Berdasarkan tabel harga di atas, berapakah total biaya yang harus dibayarkan jika membeli 3 kg jeruk dan 2 kg apel?
+            </p>
+</div>
+<!-- Interactive Option Cards (A, B, C, D) -->
+<div class="flex flex-col gap-space-sm" id="optionsContainer">
+<!-- Option A -->
+<button class="w-full text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-150 flex items-center justify-between group shadow-sm" id="option-A" onclick="selectOption('A')" type="button">
+<div class="flex items-center gap-space-md">
+<span class="w-10 h-10 rounded-full bg-surface text-neutral-text-main font-title-lg text-title-lg font-bold flex items-center justify-center group-hover:bg-primary-container group-hover:text-on-primary transition-colors shadow-sm">
+                  A
+                </span>
+<span class="font-title-md text-title-md text-neutral-text-main group-hover:text-primary font-semibold">
+                  Rp105.000
+                </span>
+</div>
+<span class="material-symbols-outlined text-transparent group-hover:text-neutral-text-muted text-2xl transition-colors">check_circle</span>
+</button>
+<!-- Option B (Selected State Active) -->
+<button class="w-full text-left p-space-md rounded-xl bg-brand-blue-soft shadow-md flex items-center justify-between transition-all duration-150" id="option-B" onclick="selectOption('B')" type="button">
+<div class="flex items-center gap-space-md">
+<span class="w-10 h-10 rounded-full bg-primary-container text-on-primary font-title-lg text-title-lg font-bold flex items-center justify-center shadow-sm">
+                  B
+                </span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold">
+                    Rp115.000
+                  </span>
+<span class="font-label-sm text-label-sm text-brand-blue-interactive font-medium">Pilihan kamu saat ini</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-brand-blue-interactive text-2xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+<!-- Option C -->
+<button class="w-full text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-150 flex items-center justify-between group shadow-sm" id="option-C" onclick="selectOption('C')" type="button">
+<div class="flex items-center gap-space-md">
+<span class="w-10 h-10 rounded-full bg-surface text-neutral-text-main font-title-lg text-title-lg font-bold flex items-center justify-center group-hover:bg-primary-container group-hover:text-on-primary transition-colors shadow-sm">
+                  C
+                </span>
+<span class="font-title-md text-title-md text-neutral-text-main group-hover:text-primary font-semibold">
+                  Rp118.000
+                </span>
+</div>
+<span class="material-symbols-outlined text-transparent group-hover:text-neutral-text-muted text-2xl transition-colors">check_circle</span>
+</button>
+<!-- Option D -->
+<button class="w-full text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-150 flex items-center justify-between group shadow-sm" id="option-D" onclick="selectOption('D')" type="button">
+<div class="flex items-center gap-space-md">
+<span class="w-10 h-10 rounded-full bg-surface text-neutral-text-main font-title-lg text-title-lg font-bold flex items-center justify-center group-hover:bg-primary-container group-hover:text-on-primary transition-colors shadow-sm">
+                  D
+                </span>
+<span class="font-title-md text-title-md text-neutral-text-main group-hover:text-primary font-semibold">
+                  Rp124.000
+                </span>
+</div>
+<span class="material-symbols-outlined text-transparent group-hover:text-neutral-text-muted text-2xl transition-colors">check_circle</span>
+</button>
+</div>
+<!-- Bottom Action Toolbar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md mt-space-xs">
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<!-- Previous Question Button -->
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+                Soal Sebelumnya
+              </button>
+<!-- Doubt / Ragu-ragu Checkbox Button -->
+<label class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-space-md py-space-sm rounded-xl bg-amber-50 hover:bg-amber-100 text-warning-amber cursor-pointer transition-colors select-none shadow-sm">
+<input class="w-4 h-4 rounded text-warning-amber accent-warning-amber focus:ring-0" id="checkRagu" type="checkbox"/>
+<span class="font-label-lg text-label-lg font-bold">Ragu-ragu</span>
+</label>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto justify-end">
+<!-- Save & Next Button -->
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded-xl bg-primary-container hover:bg-brand-blue-interactive text-on-primary font-label-lg text-label-lg font-bold transition-all shadow-md" type="button">
+                Simpan &amp; Lanjut
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<!-- End Exam / Selesaikan Ujian -->
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl bg-secondary hover:bg-brand-orange-hover text-on-secondary font-label-lg text-label-lg font-bold transition-colors shadow-md" onclick="openFinishModal()" type="button">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+                Selesaikan Ujian
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Question Matrix Navigation Palette (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-neutral-card rounded-2xl shadow-sm p-space-md sm:p-space-lg flex flex-col gap-space-md sticky top-32">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">grid_view</span>
+<h3 class="font-title-lg text-title-lg text-neutral-text-main font-bold">Palet Soal</h3>
+</div>
+<span class="font-label-sm text-label-sm text-neutral-text-muted font-semibold">Total: 30 Butir</span>
+</div>
+<!-- Color Status Legend -->
+<div class="grid grid-cols-3 gap-2 p-space-xs bg-neutral-surface rounded-xl">
+<div class="flex items-center gap-1.5 p-1">
+<span class="w-3 h-3 rounded-md bg-success-emerald inline-block"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-neutral-text-main font-bold">Dijawab</span>
+<span class="font-label-sm text-label-sm text-neutral-text-muted">12 Butir</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 p-1">
+<span class="w-3 h-3 rounded-md bg-warning-amber inline-block"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-neutral-text-main font-bold">Ragu</span>
+<span class="font-label-sm text-label-sm text-neutral-text-muted">2 Butir</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 p-1">
+<span class="w-3 h-3 rounded-md bg-surface-container-highest inline-block"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-neutral-text-main font-bold">Kosong</span>
+<span class="font-label-sm text-label-sm text-neutral-text-muted">16 Butir</span>
+</div>
+</div>
+</div>
+<!-- 30 Question Number Buttons Grid -->
+<div class="grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-5 gap-2 pt-space-xs">
+<!-- 1 to 6 (Sudah Dijawab - Hijau) -->
+<button class="h-10 rounded-xl bg-success-emerald text-on-primary font-title-md text-title-md font-bold hover:opacity-90 shadow-sm flex items-center justify-center transition-transform hover:scale-105" type="button">1</button>
+<button class="h-10 rounded-xl bg-success-emerald text-on-primary font-title-md text-title-md font-bold hover:opacity-90 shadow-sm flex items-center justify-center transition-transform hover:scale-105" type="button">2</button>
+<button class="h-10 rounded-xl bg-success-emerald text-on-primary font-title-md text-title-md font-bold hover:opacity-90 shadow-sm flex items-center justify-center transition-transform hover:scale-105" type="button">3</button>
+<button class="h-10 rounded-xl bg-success-emerald text-on-primary font-title-md text-title-md font-bold hover:opacity-90 shadow-sm flex items-center justify-center transition-transform hover:scale-105" type="button">4</button>
+<button class="h-10 rounded-xl bg-warning-amber text-on-primary font-title-md text-title-md font-bold hover:opacity-90 shadow-sm flex items-center justify-center transition-transform hover:scale-105" title="Ragu-ragu" type="button">5</button>
+<button class="h-10 rounded-xl bg-success-emerald text-on-primary font-title-md text-title-md font-bold hover:opacity-90 shadow-sm flex items-center justify-center transition-transform hover:scale-105" type="button">6</button>
+<!-- 7 Active Current Question -->
+<button class="h-10 rounded-xl bg-brand-blue-interactive text-on-primary font-title-md text-title-md font-extrabold shadow-md flex items-center justify-center ring-4 ring-brand-blue-soft scale-105" type="button">7</button>
+<!-- 8 to 13 (Mix of states) -->
+<button class="h-10 rounded-xl bg-success-emerald text-on-primary font-title-md text-title-md font-bold hover:opacity-90 shadow-sm flex items-center justify-center transition-transform hover:scale-105" type="button">8</button>
+<button class="h-10 rounded-xl bg-success-emerald text-on-primary font-title-md text-title-md font-bold hover:opacity-90 shadow-sm flex items-center justify-center transition-transform hover:scale-105" type="button">9</button>
+<button class="h-10 rounded-xl bg-warning-amber text-on-primary font-title-md text-title-md font-bold hover:opacity-90 shadow-sm flex items-center justify-center transition-transform hover:scale-105" title="Ragu-ragu" type="button">10</button>
+<button class="h-10 rounded-xl bg-success-emerald text-on-primary font-title-md text-title-md font-bold hover:opacity-90 shadow-sm flex items-center justify-center transition-transform hover:scale-105" type="button">11</button>
+<button class="h-10 rounded-xl bg-success-emerald text-on-primary font-title-md text-title-md font-bold hover:opacity-90 shadow-sm flex items-center justify-center transition-transform hover:scale-105" type="button">12</button>
+<button class="h-10 rounded-xl bg-success-emerald text-on-primary font-title-md text-title-md font-bold hover:opacity-90 shadow-sm flex items-center justify-center transition-transform hover:scale-105" type="button">13</button>
+<!-- 14 to 30 (Belum Dijawab - Abu-abu) -->
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">14</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">15</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">16</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">17</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">18</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">19</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">20</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">21</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">22</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">23</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">24</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">25</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">26</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">27</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">28</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">29</button>
+<button class="h-10 rounded-xl bg-surface-container-high text-on-surface-variant font-title-md text-title-md font-semibold hover:bg-surface-container-highest transition-transform hover:scale-105" type="button">30</button>
+</div>
+<!-- Quick motivational banner for kids -->
+<div class="mt-space-sm p-space-sm rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-2xl flex-shrink-0">emoji_events</span>
+<span class="font-body-sm text-body-sm font-semibold">
+              Hebat Farhan! Kerjakan dengan tenang dan teliti ya.
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- VIEW 2: HASIL BELAJAR & ANALISIS PERFORMA (Dual-State Display) -->
+<section class="w-full max-w-7xl mx-auto px-margin py-space-md flex flex-col gap-space-lg" id="resultSection">
+<!-- Top Result Banner -->
+<div class="bg-gradient-to-r from-primary via-primary-container to-surface-tint rounded-3xl p-space-lg sm:p-space-2xl text-on-primary shadow-xl relative overflow-hidden">
+<!-- Decorative background blur elements -->
+<div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-secondary-fixed/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-16 -bottom-16 w-64 h-64 rounded-full bg-brand-blue-soft/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-space-xs max-w-xl">
+<div class="inline-flex items-center gap-2 px-space-md py-1 rounded-full bg-success-emerald-soft text-success-emerald font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-base">task_alt</span>
+            Asesmen Berhasil Diselesaikan
+          </div>
+<h1 class="font-display-lg text-display-lg font-bold tracking-tight text-on-primary mt-1">
+            Selamat, Farhan!
+          </h1>
+<p class="font-body-lg text-body-lg text-primary-fixed leading-relaxed">
+            Kamu telah menyelesaikan seluruh rangkaian Ujian Formatif Matematika Kelas 4 dengan capaian luar biasa.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md mt-2 text-primary-fixed font-label-md text-label-md">
+<span>• Waktu Selesai: 48 Menit</span>
+<span>• Tanggal: 14 Oktober 2024</span>
+<span>• SDN 1 Purwasari</span>
+</div>
+</div>
+<!-- Hero Score Badge -->
+<div class="flex flex-col items-center bg-neutral-card/10 backdrop-blur-md p-space-xl rounded-2xl shadow-inner min-w-[240px] text-center">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary-fixed font-bold">Nilai Akhir Ujian</span>
+<div class="flex items-baseline gap-1 my-1">
+<span class="font-display-lg text-display-lg font-black text-secondary-fixed text-6xl tracking-tighter">88</span>
+<span class="font-title-lg text-title-lg text-primary-fixed">/ 100</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-success-emerald text-on-primary font-label-lg text-label-lg font-bold shadow-sm">
+<span class="material-symbols-outlined text-sm">stars</span>
+            Sangat Baik / Tuntas
+          </div>
+</div>
+</div>
+</div>
+<!-- Analytics & Score Breakdown Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg items-stretch">
+<!-- Metric Cards (Benar, Salah, Kosong) (5 Cols) -->
+<div class="md:col-span-5 flex flex-col gap-space-md">
+<div class="bg-neutral-card rounded-2xl shadow-sm p-space-lg flex flex-col justify-between h-full gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-title-lg text-title-lg text-neutral-text-main font-bold">Rincian Jawaban Soal</h3>
+<span class="font-label-md text-label-md text-neutral-text-muted">30 Soal Teruji</span>
+</div>
+<!-- Breakdown Visual Bar Mini -->
+<div class="w-full h-4 bg-surface-container rounded-full overflow-hidden flex shadow-inner">
+<div class="h-full bg-success-emerald transition-all" style="width: 86.6%;" title="Benar: 26"></div>
+<div class="h-full bg-danger-rose transition-all" style="width: 10%;" title="Salah: 3"></div>
+<div class="h-full bg-surface-container-highest transition-all" style="width: 3.4%;" title="Kosong: 1"></div>
+</div>
+<!-- Stat Cards Row -->
+<div class="grid grid-cols-3 gap-space-xs sm:gap-space-sm pt-space-xs">
+<div class="p-space-md rounded-xl bg-success-emerald-soft flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-success-emerald text-2xl">check_circle</span>
+<span class="font-display-lg-mobile text-display-lg-mobile text-success-emerald font-black my-0.5">26</span>
+<span class="font-label-sm text-label-sm text-success-emerald font-bold">Benar</span>
+</div>
+<div class="p-space-md rounded-xl bg-error-container/40 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-danger-rose text-2xl">cancel</span>
+<span class="font-display-lg-mobile text-display-lg-mobile text-danger-rose font-black my-0.5">3</span>
+<span class="font-label-sm text-label-sm text-danger-rose font-bold">Salah</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-neutral-text-muted text-2xl">indeterminate_check_box</span>
+<span class="font-display-lg-mobile text-display-lg-mobile text-neutral-text-muted font-black my-0.5">1</span>
+<span class="font-label-sm text-label-sm text-neutral-text-muted font-bold">Kosong</span>
+</div>
+</div>
+<!-- Teacher's Note Card -->
+<div class="p-space-md rounded-xl bg-brand-blue-soft flex items-start gap-space-sm mt-space-xs">
+<span class="material-symbols-outlined text-brand-blue-interactive text-2xl flex-shrink-0">record_voice_over</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Catatan Guru (Ibu Ratna Dewi, S.Pd.)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">
+                "Farhan sangat cepat memahami soal cerita perkalian dan pecahan. Perbanyak latihan membaca tabel harga dengan diskon agar semakin cermat."
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Domain Mastery Horizontal Bars (7 Cols) -->
+<div class="md:col-span-7 flex flex-col gap-space-md">
+<div class="bg-neutral-card rounded-2xl shadow-sm p-space-lg flex flex-col justify-between h-full gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-title-lg text-title-lg text-neutral-text-main font-bold">Penguasaan Kompetensi Materi</h3>
+<span class="font-body-sm text-body-sm text-neutral-text-muted">Tingkat keberhasilan indikator pembelajaran</span>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-brand-blue-soft text-brand-blue-interactive font-label-sm text-label-sm font-bold">
+              Kurikulum Merdeka
+            </span>
+</div>
+<!-- Skill Bars -->
+<div class="flex flex-col gap-space-md">
+<!-- Skill 1: Operasi Bilangan -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-lg text-label-lg">
+<span class="text-neutral-text-main font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-brand-blue-interactive text-lg">calculate</span>
+                  Operasi Hitung Bilangan Cacah &amp; Uang
+                </span>
+<span class="text-primary font-bold">92%</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-brand-blue-interactive rounded-full transition-all duration-700" style="width: 92%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-success-emerald font-medium">Melampaui rata-rata kelas (82%)</span>
+</div>
+<!-- Skill 2: Pecahan -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-lg text-label-lg">
+<span class="text-neutral-text-main font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-lg">pie_chart</span>
+                  Pecahan Senilai &amp; Bentuk Desimal
+                </span>
+<span class="text-secondary font-bold">85%</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full transition-all duration-700" style="width: 85%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-success-emerald font-medium">Tuntas di atas kriteria minimal</span>
+</div>
+<!-- Skill 3: Geometri -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-lg text-label-lg">
+<span class="text-neutral-text-main font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-warning-amber text-lg">square_foot</span>
+                  Geometri, Keliling &amp; Luas Bangun Datar
+                </span>
+<span class="text-warning-amber font-bold">78%</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-warning-amber rounded-full transition-all duration-700" style="width: 78%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-neutral-text-muted font-medium">Cukup • Perlu penguatan konsep bangun gabungan</span>
+</div>
+</div>
+<!-- Bottom Action Buttons in Result -->
+<div class="flex flex-wrap items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-lg py-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-lg text-label-lg font-bold inline-flex items-center gap-space-xs transition-colors shadow-sm" onclick="alert('Membuka kunci pembahasan dan penjelasan langkah pengerjaan...');" type="button">
+<span class="material-symbols-outlined text-lg">menu_book</span>
+              Lihat Pembahasan Lengkap
+            </button>
+<button class="px-space-lg py-space-sm rounded-xl bg-primary-container hover:bg-brand-blue-interactive text-on-primary font-label-lg text-label-lg font-bold inline-flex items-center gap-space-xs transition-colors shadow-md" onclick="switchView('exam')" type="button">
+<span class="material-symbols-outlined text-lg">home</span>
+              Kembali ke Beranda
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Motivational Kid Gallery / Trophy Area -->
+<div class="w-full bg-neutral-card rounded-2xl p-space-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-3xl">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-neutral-text-main font-bold">Lencana Bintang Purwasari Diraih!</h4>
+<p class="font-body-md text-body-md text-neutral-text-muted">
+            Farhan mendapatkan lencana penghargaan "Detektif Berhitung Cepat" atas akurasi hitung di atas 85%.
+          </p>
+</div>
+</div>
+<button class="px-space-md py-space-xs rounded-xl bg-secondary hover:bg-brand-orange-hover text-on-secondary font-label-lg text-label-lg font-bold inline-flex items-center gap-space-xs transition-colors shadow-sm whitespace-nowrap" onclick="alert('Mengunduh Sertifikat Hasil Ujian Format PDF...');" type="button">
+<span class="material-symbols-outlined text-lg">download</span>
+        Unduh Sertifikat Nilai
+      </button>
+</div>
+</section>
+<!-- FINISH CONFIRMATION DIALOG MODAL (INTERACTIVE) -->
+<div class="fixed inset-0 z-50 bg-neutral-text-main/50 backdrop-blur-sm hidden items-center justify-center p-space-md" id="finishModal">
+<div class="bg-neutral-card rounded-3xl p-space-xl max-w-lg w-full shadow-2xl flex flex-col gap-space-lg animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-amber-100 text-warning-amber flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-3xl">live_help</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-neutral-text-main font-bold">Selesaikan Ujian Sekarang?</h3>
+<span class="font-label-sm text-label-sm text-neutral-text-muted">Pastikan semua soal sudah kamu periksa dengan cermat.</span>
+</div>
+</div>
+<div class="bg-neutral-surface rounded-2xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-neutral-text-muted">Soal Dijawab Mantap:</span>
+<span class="font-bold text-success-emerald">12 Soal</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-neutral-text-muted">Soal Ragu-ragu:</span>
+<span class="font-bold text-warning-amber">2 Soal</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-neutral-text-muted">Soal Belum Terisi:</span>
+<span class="font-bold text-danger-rose">16 Soal</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-neutral-text-muted leading-relaxed">
+        Masih tersisa waktu <strong>01:14:32</strong>. Jika kamu yakin ingin mengakhiri sesi, sistem akan langsung mengoreksi dan menampilkan hasil belajar.
+      </p>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-neutral-text-main font-label-lg text-label-lg font-semibold transition-colors" onclick="closeFinishModal()" type="button">
+          Cek Soal Lagi
+        </button>
+<button class="px-space-lg py-space-sm rounded-xl bg-secondary hover:bg-brand-orange-hover text-on-secondary font-label-lg text-label-lg font-bold transition-colors shadow-md" onclick="confirmFinishExam()" type="button">
+          Ya, Kirim Jawaban
+        </button>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Logic -->
+<script>
+    function selectOption(opt) {
+      const options = ['A', 'B', 'C', 'D'];
+      options.forEach(item => {
+        const el = document.getElementById('option-' + item);
+        if (!el) return;
+        if (item === opt) {
+          el.className = "w-full text-left p-space-md rounded-xl bg-brand-blue-soft shadow-md flex items-center justify-between transition-all duration-150";
+          el.innerHTML = `
+            <div class="flex items-center gap-space-md">
+              <span class="w-10 h-10 rounded-full bg-primary-container text-on-primary font-title-lg text-title-lg font-bold flex items-center justify-center shadow-sm">
+                ${item}
+              </span>
+              <div class="flex flex-col">
+                <span class="font-title-md text-title-md text-primary font-bold">
+                  ${getOptionPrice(item)}
+                </span>
+                <span class="font-label-sm text-label-sm text-brand-blue-interactive font-medium">Pilihan kamu saat ini</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-brand-blue-interactive text-2xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          `;
+        } else {
+          el.className = "w-full text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-150 flex items-center justify-between group shadow-sm";
+          el.innerHTML = `
+            <div class="flex items-center gap-space-md">
+              <span class="w-10 h-10 rounded-full bg-surface text-neutral-text-main font-title-lg text-title-lg font-bold flex items-center justify-center group-hover:bg-primary-container group-hover:text-on-primary transition-colors shadow-sm">
+                ${item}
+              </span>
+              <span class="font-title-md text-title-md text-neutral-text-main group-hover:text-primary font-semibold">
+                ${getOptionPrice(item)}
+              </span>
+            </div>
+            <span class="material-symbols-outlined text-transparent group-hover:text-neutral-text-muted text-2xl transition-colors">check_circle</span>
+          `;
+        }
+      });
+    }
+
+    function getOptionPrice(opt) {
+      const map = {
+        'A': 'Rp105.000',
+        'B': 'Rp115.000',
+        'C': 'Rp118.000',
+        'D': 'Rp124.000'
+      };
+      return map[opt] || '';
+    }
+
+    function switchView(view) {
+      const examSec = document.getElementById('examRuntimeSection');
+      const resSec = document.getElementById('resultSection');
+      const btnExam = document.getElementById('btnTabExam');
+      const btnRes = document.getElementById('btnTabResult');
+
+      if (view === 'exam') {
+        examSec.classList.remove('hidden');
+        resSec.classList.add('hidden');
+        btnExam.className = "px-space-md py-1 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary-container text-on-primary shadow-sm flex items-center gap-1";
+        btnRes.className = "px-space-md py-1 rounded-full font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface flex items-center gap-1";
+      } else {
+        examSec.classList.add('hidden');
+        resSec.classList.remove('hidden');
+        btnRes.className = "px-space-md py-1 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary-container text-on-primary shadow-sm flex items-center gap-1";
+        btnExam.className = "px-space-md py-1 rounded-full font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface flex items-center gap-1";
+      }
+    }
+
+    function openFinishModal() {
+      const modal = document.getElementById('finishModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeFinishModal() {
+      const modal = document.getElementById('finishModal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    }
+
+    function confirmFinishExam() {
+      closeFinishModal();
+      switchView('result');
+    }
+
+    // Default start view: interactive exam
+    document.addEventListener('DOMContentLoaded', () => {
+      switchView('exam');
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-neutral-text-muted"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md font-semibold text-primary">TKA GURU • SDN 1 Purwasari</span><span class="font-body-sm text-body-sm hidden sm:inline">Sistem Bank Soal &amp; Asesmen Standar Sekolah Dasar</span></div><div class="font-body-sm text-body-sm text-center md:text-right">© 2024–2025 SDN 1 Purwasari. Terintegrasi Kurikulum Merdeka.</div></div></footer></body></html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TKA GURU - Generator Naskah Ujian Berbasis AI SDN 1 Purwasari</title>
+    <meta name="description" content="Platform Otomasi Penyusunan Naskah Asesmen Tes Kemampuan Akademik (TKA) SDN 1 Purwasari berbasis Gemini AI, lengkap dengan Editor Soal, Mode Cetak A4 Resmi, dan Ujian Interaktif CBT." />
+    <meta property="og:title" content="TKA GURU - Generator Naskah Ujian Berbasis AI SDN 1 Purwasari" />
+    <meta property="og:description" content="Platform Otomasi Penyusunan Naskah Asesmen Tes Kemampuan Akademik (TKA) SDN 1 Purwasari berbasis Gemini AI, lengkap dengan Editor Soal, Mode Cetak A4 Resmi, dan Ujian Interaktif CBT." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Times+New+Roman&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <script>
+      // Pencegahan Layar Putih (Anti-Blank Screen) untuk GitHub Pages
+      (function() {
+        var isGitHub = window.location.hostname.endsWith('github.io');
+        // Deteksi apakah file ini dijalankan sebagai template mentah unbuilt di GitHub Pages
+        window.addEventListener('error', function(e) {
+          if (e.target && (e.target.src || '').indexOf('main.tsx') !== -1) {
+            console.warn('[TKA GURU] Browser tidak dapat memproses file TSX mentah di GitHub Pages. Mengalihkan ke folder rilis /docs/...');
+            var path = window.location.pathname;
+            var cleanPath = path.endsWith('/') ? path : path + '/';
+            if (cleanPath.indexOf('/docs/') === -1) {
+              window.location.replace(cleanPath + 'docs/' + window.location.search + window.location.hash);
+            }
+          }
+        }, true);
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-tK5TmsRp.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-8ztwn1nD.css">
+  </head>
+  <body class="bg-[#faf8ff] text-[#1a1b21] antialiased selection:bg-[#dce1ff] selection:text-[#00164e]">
+    <div id="root">
+      <!-- Fallback visual agar tidak blank putih saat memuat atau jika dibuka langsung di GitHub Pages -->
+      <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #faf8ff; font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; padding: 24px; text-align: center; color: #1a1b21;">
+        <div style="width: 60px; height: 60px; border-radius: 18px; background: #00236f; display: flex; align-items: center; justify-content: center; color: white; margin-bottom: 20px; box-shadow: 0 10px 25px -5px rgba(0,35,111,0.25);">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 6h10"></path><path d="M6 10h10"></path></svg>
+        </div>
+        <h1 style="font-size: 22px; font-weight: 800; margin: 0 0 8px 0; color: #00236f; letter-spacing: -0.02em;">TKA GURU • SDN 1 Purwasari</h1>
+        <p style="font-size: 14px; color: #475569; margin: 0 0 24px 0; max-width: 440px; line-height: 1.6;">
+          Memuat Sistem Generator Naskah Ujian &amp; Asesmen Berbasis AI...
+        </p>
+        <div style="width: 36px; height: 36px; border: 3px solid #cbd5e1; border-top-color: #00236f; border-radius: 50%; animation: spin 0.8s linear infinite;"></div>
+        <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+        <div id="github-notice" style="margin-top: 28px; display: none; max-width: 420px; background: white; padding: 16px 20px; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+          <p style="font-size: 12px; color: #64748b; margin: 0 0 12px 0;">
+            Jika Anda membuka repositori ini langsung di GitHub Pages (cabang root), klik tombol di bawah untuk membuka versi terkompilasi:
+          </p>
+          <a href="./docs/" style="display: inline-block; padding: 8px 18px; background: #00236f; color: white; text-decoration: none; border-radius: 10px; font-size: 12px; font-weight: 700;">
+            Buka Versi Rilis Web (/docs)
+          </a>
+        </div>
+        <script>
+          // Tampilkan tombol bantuan jika dalam 2 detik React belum ter-mount dan berada di root GitHub Pages
+          setTimeout(function() {
+            var notice = document.getElementById('github-notice');
+            var isGitHub = window.location.hostname.endsWith('github.io');
+            var isRoot = window.location.pathname.indexOf('/docs') === -1;
+            if (notice && isGitHub && isRoot) {
+              notice.style.display = 'block';
+            }
+          }, 2000);
+        </script>
+        <noscript>
+          <p style="color: #dc2626; margin-top: 20px; font-weight: bold; font-size: 14px;">
+            Mohon aktifkan JavaScript di peramban Anda untuk menggunakan platform TKA GURU.
+          </p>
+        </noscript>
+      </div>
+    </div>
+  </body>
+</html>
+

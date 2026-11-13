@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TKA GURU SDN 1 Purwasari</title>
+    <script>
+      // Single Page App redirect for GitHub Pages
+      (function() {
+        var path = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        
+        // Find if in docs/ or repo root
+        if (path.indexOf('/docs/') !== -1) {
+          var docsBase = path.substring(0, path.indexOf('/docs/') + 6);
+          window.location.replace(docsBase + search + hash);
+        } else {
+          // If in repository subfolder, redirect to the repository root index
+          var segments = path.split('/').filter(Boolean);
+          if (segments.length > 0) {
+            window.location.replace('/' + segments[0] + '/' + search + hash);
+          } else {
+            window.location.replace('/' + search + hash);
+          }
+        }
+      })();
+    </script>
+  </head>
+  <body style="font-family: system-ui, -apple-system, sans-serif; background-color: #faf8ff; color: #1a1b21; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; text-align: center;">
+    <div>
+      <h2 style="color: #00236f; margin-bottom: 8px;">TKA GURU • SDN 1 Purwasari</h2>
+      <p style="color: #64748b; font-size: 14px;">Mengalihkan ke halaman utama aplikasi...</p>
+      <a href="./" style="display: inline-block; margin-top: 12px; padding: 8px 16px; background-color: #00236f; color: white; text-decoration: none; border-radius: 8px; font-size: 13px; font-weight: 600;">Kembali ke Beranda</a>
+    </div>
+  </body>
+</html>
